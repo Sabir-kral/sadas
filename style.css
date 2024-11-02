@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+.a{
+    width: 80vw;
+    height: 85vh;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+img{
+    width: 800px;
+    height: 600px;
+
+}
+.d{
+    float: right;
+}
+h1,p,h2{
+    font-size: 50px;
+}
+.r button{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+}
+#a{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    animation-name: F3;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.r button:hover{
+    transform: rotate(12deg) translate(-18px, -20px) skew(7deg, 0deg);
+    box-shadow: 18px 15px 27px 0px rgba(237, 12, 12, 0.3);
+}
+.r button{
+    transition: 1s;
+}
+
+@keyframes F3 {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+                transform: scale(1) rotateZ(0);
+      }
+      50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+                transform: scale(2) rotateZ(180deg);
+      }
+      100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+                transform: scale(1) rotateZ(360deg);
+      }
+}
